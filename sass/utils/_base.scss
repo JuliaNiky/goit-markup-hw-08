@@ -12,7 +12,7 @@
 
 body {
     font-size: 14px;
-    line-height: 1.2;
+    line-height: 1.18;
     letter-spacing: 0.03em;
     font-style: normal;
 }
@@ -25,11 +25,12 @@ h5,
 h6 {
     margin: 0;
     font-size: inherit;
-    font-weight: 400;
+    font-weight: 700;
 }
 
 p {
     margin: 0;
+    font-weight: 400;
 }
 
 ul,
@@ -45,10 +46,7 @@ a {
 }
 
 a,
-a:visited {
-    text-decoration: none;
-}
-
+a:visited,
 a:hover {
     text-decoration: none;
 }
@@ -83,24 +81,64 @@ body {
 }
 
 .container {
-    width: 1200px;
     padding: 0 15px;
     margin: 0 auto;
+    width: 100%;
+
+    @media screen and (min-width: 480px) {
+        width: 480px;
+    }
+
+    @media screen and (min-width: 768px) {
+        width: 768px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 1200px;
+    }
 }
 
 .section {
-    padding: 94px 0;
+    padding: 60px 0;
+    
+    @media screen and (min-width: 1200px) {
+        padding: 94px 0;
+    }
+}
+
+.section__list {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+}
+
+.section__item {
+    @media screen and (max-width: 767px) {
+        padding-bottom: 30px;
+    }
+}
+
+.section__item:last-child {
+    @media screen and (max-width: 767px) {
+        padding-bottom: 0;
+    }
 }
 
 .section__title {
     margin-bottom: 50px;
-    font-weight: 700;
-    font-size: 36px;
     text-align: center;
+    font-size: 28px;
     color: var(--primary-title-color);
-}
 
-.section__list {
-    display: flex;
-    gap: 30px;
+    @media screen and (min-width: 1200px) {
+        font-size: 36px;
+    }
 }

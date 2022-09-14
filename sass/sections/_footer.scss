@@ -4,19 +4,26 @@
 
     &__container {
         display: flex;
-        flex-direction: column;
+        justify-content: center;
+        align-items: baseline;
+        flex-wrap: wrap;
         gap: 60px;
         text-align: center;
 
         @media screen and (min-width: 768px) {
             flex-direction: row;
             flex-wrap: wrap;
-            margin: 0 89px;        
         }
 
         @media screen and (min-width: 1200px) {
+            text-align: left;
             justify-content: space-between;
         }
+    }
+}    
+.footer__wrapper {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        margin-right: 105px;
     }
 }
 

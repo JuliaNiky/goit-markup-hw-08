@@ -14,7 +14,7 @@
     opacity: 1;
     visibility: visible;
     transition: opacity var(--transition-duration) var(--transition-timing-function),
-        visibility var(--transition-duration) var(--transition-timing-function);
+                visibility var(--transition-duration) var(--transition-timing-function);
 }
 
 .modal {
@@ -22,11 +22,18 @@
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%) scale(1);
-    width: 528px;
     min-height: 581px;
     padding: 40px;
     background: var(--default-background);
     transition: transform var(--transition-duration) var(--transition-timing-function);
+
+    @media screen and (min-width: 480px) {
+        width: 450px;
+    }
+    
+    @media screen and (min-width: 1200px) {
+        width: 528px;
+    }
 }
 
 .backdrop.is-hidden .modal {
@@ -60,7 +67,6 @@
 }
 
 .modal__title {
-    font-weight: 700;
     font-size: 20px;
     line-height: 1.15;
     text-align: center;

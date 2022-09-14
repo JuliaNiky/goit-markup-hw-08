@@ -17,7 +17,67 @@
 
 <body>
     <header class="header">
-        <div class="container header__container">
+        <div class="header-mobile__container container">
+            <a class="logo header__logo" href="./index.html">Web<span class="header__logo--black">Studio</span></a>
+    
+            <button class="header-mobile__btn js-open-menu" type="button">
+                <svg class="header-mobile__btn" width="25" height="25">
+                    <use href="./images/icons.svg#icon-menu-burger">
+                    </use>
+                </svg>
+            </button>
+            <div class="header-mobile__wrap js-menu-container">
+                <button class="header-mobile__btn-close js-close-menu" type="button">
+                    <svg class="header-mobile__close" width="19" height="19">
+                        <use href="./images/icons.svg#icon-close">
+                        </use>
+                    </svg>
+                </button>
+    
+                <nav class="nav-mobile">
+                    <ul class="nav-mobile__list">
+                        <li class="nav-mobile__item">
+                            <a class="nav-mobile__link" href="./index.html">Студія</a>
+                        </li>
+                        <li class="nav-mobile__item">
+                            <a class="nav-mobile__link nav-mobile__link--active" href="./portfolio.html">Портфоліо</a>
+                        </li>
+                        <li class="nav-mobile__item">
+                            <a class="nav-mobile__link" href="#">Контакти</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="contacts-mobile">
+                    <ul class="contacts-mobile__list">
+                        <li class="contacts-mobile__item">
+                            <a class="contacts-mobile__link contacts-mobile__tel" href="tel:+380961111111" target="_blank"
+                                rel="noopener noreferrer" aria-label="link to phone">
+                                +38 096 111 11 11
+                            </a>
+                        </li>
+                        <li class="contacts-mobile__item contacts-mobile__email">
+                            <a class="contacts-mobile__link" href="mailto:info@devstudio.com" target="_blank"
+                                rel="noopener noreferrer" aria-label="link to email">
+                                info@devstudio.com
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="social-media-mobile">
+                        <li class="social-media-mobile__item"><a class="social-media-mobile__link"
+                                href="https://www.instagram.com/lavashyk_official/" target="_blank"
+                                rel="noopener noreferrer">Instagram</a></li>
+                        <li class="social-media-mobile__item"><a class="social-media-mobile__link" href="#" target="_blank"
+                                rel="noopener noreferrer">Twitter</a></li>
+                        <li class="social-media-mobile__item"><a class="social-media-mobile__link" href="#" target="_blank"
+                                rel="noopener noreferrer">Facebook</a></li>
+                        <li class="social-media-mobile__item"><a class="social-media-mobile__link" href="#" target="_blank"
+                                rel="noopener noreferrer">LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    
+        <div class="container header__container header__container--visually-hiden">
             <a class="logo header__logo" href="./index.html">Web<span class="header__logo--black">Studio</span></a>
             <nav class="nav">
                 <ul class="nav__list">
@@ -25,7 +85,7 @@
                         <a class="nav__link" href="./index.html">Студія</a>
                     </li>
                     <li class="nav__item">
-                        <a class="nav__link " href="./portfolio.html">Портфоліо</a>
+                        <a class="nav__link nav__link--active" href="./portfolio.html">Портфоліо</a>
                     </li>
                     <li class="nav__item">
                         <a class="nav__link" href="#">Контакти</a>
@@ -356,5 +416,8 @@
             </div>
         </div>
     </footer>
+    
+    <script src="./js/mobile-menu.js"></script>
+
 </body>
 </html>

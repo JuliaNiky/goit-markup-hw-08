@@ -67,6 +67,7 @@
 }
 
 .modal__title {
+    font-weight: 700;
     font-size: 20px;
     line-height: 1.15;
     text-align: center;
@@ -164,16 +165,29 @@
     height: 16px;
     border: 2px solid var(--primary-title-color);
     border-radius: 3px;
-    margin-right: 9px;
-    margin-left: 12px;
+    margin-right: 5px;
+
+    @media screen and (min-width: 768px) {
+        margin-right: 8px;
+    }
+    
+    @media screen and (min-width: 1200px) {
+        margin-right: 9px;
+        margin-left: 12px;
+    }
 }
 
 .label-accept {
     display: flex;
     align-items: center;
-    font-size: 14px;
-    line-height: 1.71;
+    font-size: 12px;
+    line-height: 1.17;
     color: var(--primary-text-color);
+
+    @media screen and (min-width: 1200px) {
+        font-size: 14px;
+        line-height: 1.71;
+    }
 }
 
 .icon-check {
@@ -195,9 +209,13 @@
 
 .checkbox-link {
     margin-left: 5px;
-    font-size: 14px;
+    font-size: 12px;
     border-bottom: 1px solid;
     color: var(--accent-color);
+
+    @media screen and (min-width: 1200px) {
+        font-size: 14px;
+    }
 }
 
 .button-form {

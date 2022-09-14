@@ -85,9 +85,10 @@ a.logo {
         margin-left: auto;
     }
 }
-.contacts__list {
+.contacts {
+    display: flex;
+    
     @media screen and (min-width: 768px) and (max-width: 1199px) {
-        display: flex;
         flex-direction: column;
         align-items: flex-start;
         gap: 10px;

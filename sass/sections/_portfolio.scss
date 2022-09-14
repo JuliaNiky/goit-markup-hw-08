@@ -1,8 +1,12 @@
 .portfolio-tabs {
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+
     margin: 0 auto 50px auto;
     gap: 8px;
+    @media screen and (min-width: 768px) {
+        justify-content: center;
+    }
 }
 
 .portfolio__title {
@@ -46,8 +50,8 @@ button.tab {
     position: relative;
     overflow: hidden;
     box-sizing: border-box;
-    max-width: 370px;
-    min-height: 404px;
+    max-width: 450px;
+    // min-height: 404px;
     background-color: var(--default-background);
     border-right: 1px solid #eee;
     border-bottom: 1px solid #eee;
@@ -58,6 +62,16 @@ button.tab {
         box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
                     0px 4px 4px rgba(0, 0, 0, 0.06),
                     1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
+
+    @media screen and (min-width: 768px) {
+        max-width: 354px;
+        // min-height: 440px;
+    }
+    
+    @media screen and (min-width: 1200px) {
+        max-width: 370px;
+        // min-height: 404px;
     }
 }
 

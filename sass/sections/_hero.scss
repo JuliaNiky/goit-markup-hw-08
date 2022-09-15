@@ -1,6 +1,6 @@
 .hero {
-    max-height: 600px;
-    max-width: 1600px;
+    max-height: 400px;
+    max-width: 480px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/bg-mobile.jpg');
     background-position: center;
     background-size: cover;
@@ -13,11 +13,14 @@
 
     @media screen and (min-width: 768px) {
         background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/bg-tablet.jpg');
+        max-width: 768px;
     }
 
     @media screen and (min-width: 1200px) {
         background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/bg-desktop.jpg');
-    
+        max-height: 600px;
+        max-width: 1600px;
+
         &__geometry {
             margin: 0 auto;
             padding: 200px 0;

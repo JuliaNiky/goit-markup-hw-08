@@ -30,6 +30,7 @@ button.tab {
     line-height: 1.6;
     text-align: center;
     color: var(--primary-title-color);
+    background-color: var(--light-background);
     border-radius: 4px;
     transition: color var(--transition-duration) var(--transition-timing-function),
         background-color var(--transition-duration) var(--transition-timing-function),
